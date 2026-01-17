@@ -129,6 +129,15 @@
             margin: 0 auto;
         }
 
+        .hero-logo {
+            max-width: 450px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 10px 25px rgba(0,0,0,0.5));
+            animation: fadeInDown 1s ease-out;
+        }
+
         .hero h1 {
             font-size: 4em;
             margin-bottom: 25px;
@@ -461,6 +470,10 @@
         }
 
         @media (max-width: 768px) {
+            .hero-logo {
+                max-width: 280px;
+            }
+
             .hero h1 {
                 font-size: 2.8em;
             }
@@ -482,7 +495,7 @@
 <body>
     <header class="hero">
         <div class="hero-content">
-            <h1>RICH HAIGH CONCRETE</h1>
+            <img src="/rich-haigh-concrete.png" alt="Rich Haigh Concrete Logo" class="hero-logo">
             <p class="experience">Over 30 Years of Experience</p>
             <p class="location">Serving Collingswood and Haddon Township, NJ</p>
             <p class="tagline">Your Trusted Local Concrete and Masonry Contractor</p>
@@ -558,8 +571,7 @@
                 <div class="area-item">Haddonfield</div>
                 <div class="area-item">Audubon</div>
                 <div class="area-item">Oaklyn</div>
-				<div class="area-item">Haddon Heights</div>
-
+                <div class="area-item">Haddon Heights</div>
             </div>
         </div>
     </section>
