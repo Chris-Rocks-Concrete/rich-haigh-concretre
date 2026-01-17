@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rich Haigh Concrete | Camden County & Haddon Township NJ | Concrete & Masonry Contractor</title>
+    <title>Rich Haigh Concrete | Camden County and Haddon Township NJ | Concrete and Masonry Contractor</title>
     <meta name="description" content="Rich Haigh Concrete - Expert concrete and masonry services in Camden County and Haddon Township, NJ. Over 30 years experience. FREE estimates. Call 609-820-4024. No job too small!">
     <meta name="keywords" content="concrete contractor Camden County, masonry Camden County, concrete Haddon Township, driveways Camden County NJ, patios Haddon Township, concrete repair South Jersey, masonry contractor near me, Camden County concrete services, Haddon Township masonry, concrete driveway installation, brick work Camden County">
     <meta name="geo.region" content="US-NJ">
@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://richhaighconcrete.com">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rich Haigh Concrete - Camden County & Haddon Township NJ">
+    <meta property="og:title" content="Rich Haigh Concrete - Camden County and Haddon Township NJ">
     <meta property="og:description" content="Over 30 years of concrete and masonry experience serving Camden County and Haddon Township. FREE estimates. No job too small!">
     <meta property="og:type" content="website">
     
@@ -90,9 +90,9 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2a2a2a 100%);
             color: #d4af37;
-            padding: 120px 20px 80px;
+            padding: 140px 20px 100px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -105,70 +105,96 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="2" height="2" fill="rgba(212,175,55,0.1)"/></svg>');
-            opacity: 0.3;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+            animation: shimmer 8s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.8; }
         }
 
         .hero-content {
             position: relative;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .hero h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            color: #d4af37;
+            font-size: 4em;
+            margin-bottom: 25px;
+            font-weight: 800;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            color: #ffd700;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero .tagline {
-            font-size: 1.4em;
-            margin-bottom: 15px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
             opacity: 0.95;
             color: #ffffff;
+            font-weight: 300;
         }
 
         .hero .experience {
-            font-size: 1.8em;
+            font-size: 2em;
             color: #ffd700;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .hero .location {
-            font-size: 1.3em;
+            font-size: 1.4em;
             color: #d4af37;
-            margin-bottom: 40px;
+            margin-bottom: 45px;
             font-weight: 500;
         }
 
         .cta-button {
             display: inline-block;
-            background: #d4af37;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
             color: #000000;
-            padding: 18px 45px;
+            padding: 20px 50px;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 1.3em;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            font-size: 1.4em;
+            font-weight: 800;
+            transition: all 0.4s ease;
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .cta-button:hover {
-            background: #ffd700;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.6);
         }
 
         .phone {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-top: 30px;
-            letter-spacing: 1px;
+            font-size: 2.5em;
+            font-weight: 800;
+            margin-top: 35px;
+            letter-spacing: 2px;
             color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .container {
@@ -178,176 +204,270 @@
         }
 
         .services {
-            background: #f5f5f5;
+            background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%);
         }
 
         .services h2 {
             text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 2.8em;
+            margin-bottom: 15px;
             color: #000000;
+            font-weight: 800;
         }
 
         .services .subtitle {
             text-align: center;
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 50px;
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 60px;
+            font-weight: 300;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
         }
 
         .service-card {
             background: white;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 4px solid #d4af37;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            border-top: 5px solid #d4af37;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.3);
+            border-top-color: #ffd700;
         }
 
         .service-card h3 {
             color: #000000;
-            font-size: 1.5em;
-            margin-bottom: 15px;
+            font-size: 1.6em;
+            margin-bottom: 18px;
+            font-weight: 700;
         }
 
         .service-card p {
             color: #555;
-            line-height: 1.7;
+            line-height: 1.8;
+            font-size: 1.05em;
         }
 
         .why-choose {
             text-align: center;
-            background: white;
+            background: #ffffff;
         }
 
         .why-choose h2 {
-            font-size: 2.5em;
-            margin-bottom: 50px;
+            font-size: 2.8em;
+            margin-bottom: 60px;
             color: #000000;
+            font-weight: 800;
         }
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 45px;
+            margin-top: 50px;
         }
 
         .feature {
-            padding: 20px;
+            padding: 30px;
+            background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            background: linear-gradient(to bottom, #fffef7, #fffef0);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
         }
 
         .feature-icon {
-            font-size: 3em;
+            font-size: 3.5em;
             margin-bottom: 20px;
+            filter: drop-shadow(2px 2px 4px rgba(212, 175, 55, 0.3));
         }
 
         .feature h3 {
             color: #000000;
-            font-size: 1.4em;
-            margin-bottom: 10px;
+            font-size: 1.5em;
+            margin-bottom: 12px;
+            font-weight: 700;
         }
 
         .feature p {
             color: #666;
+            font-size: 1.05em;
         }
 
         .service-areas {
-            background: #1a1a1a;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: white;
+            position: relative;
+        }
+
+        .service-areas::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1" fill="rgba(212,175,55,0.1)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .service-areas .container {
+            position: relative;
         }
 
         .service-areas h2 {
             text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #d4af37;
+            font-size: 2.8em;
+            margin-bottom: 35px;
+            color: #ffd700;
+            font-weight: 800;
         }
 
         .service-areas p {
             text-align: center;
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            line-height: 1.8;
+            font-size: 1.25em;
+            max-width: 850px;
+            margin: 0 auto 40px;
+            line-height: 1.9;
+            color: #e0e0e0;
         }
 
         .areas-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 900px;
-            margin: 40px auto;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 50px auto;
         }
 
         .area-item {
-            background: rgba(212, 175, 55, 0.1);
-            padding: 15px;
-            border-radius: 8px;
+            background: rgba(212, 175, 55, 0.15);
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
-            border: 1px solid #d4af37;
-            color: #d4af37;
-            font-weight: 600;
+            border: 2px solid #d4af37;
+            color: #ffd700;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .area-item:hover {
+            background: rgba(255, 215, 0, 0.25);
+            border-color: #ffd700;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
         }
 
         .contact-section {
-            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 50%, #ffed4e 100%);
             color: #000000;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .contact-section .container {
+            position: relative;
         }
 
         .contact-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-weight: 700;
+            font-size: 2.8em;
+            margin-bottom: 25px;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.3);
         }
 
         .contact-section p {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-            font-weight: 500;
+            font-size: 1.4em;
+            margin-bottom: 35px;
+            font-weight: 600;
         }
 
         .contact-phone {
-            font-size: 2.8em;
-            font-weight: 700;
-            margin: 20px 0;
-            letter-spacing: 2px;
+            font-size: 3.2em;
+            font-weight: 800;
+            margin: 25px 0;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
         }
 
         footer {
             background: #000000;
             color: #d4af37;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
         }
 
         footer p {
-            margin: 5px 0;
+            margin: 8px 0;
+            font-size: 1.05em;
+        }
+
+        footer strong {
+            color: #ffd700;
         }
 
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5em;
+                font-size: 2.8em;
             }
 
             .hero .tagline {
-                font-size: 1.2em;
+                font-size: 1.3em;
             }
 
             .phone, .contact-phone {
-                font-size: 1.8em;
+                font-size: 2em;
+            }
+
+            .services h2, .why-choose h2, .service-areas h2, .contact-section h2 {
+                font-size: 2.2em;
             }
         }
     </style>
@@ -355,10 +475,10 @@
 <body>
     <header class="hero">
         <div class="hero-content">
-            <h1>Rich Haigh Concrete</h1>
+            <h1>RICH HAIGH CONCRETE</h1>
             <p class="experience">Over 30 Years of Experience</p>
-            <p class="location">Serving Camden County & Haddon Township, NJ</p>
-            <p class="tagline">Your Trusted Local Concrete & Masonry Contractor</p>
+            <p class="location">Serving Camden County and Haddon Township, NJ</p>
+            <p class="tagline">Your Trusted Local Concrete and Masonry Contractor</p>
             <a href="tel:609-820-4024" class="cta-button" aria-label="Call for free estimate">Get FREE Estimate</a>
             <div class="phone">📞 609-820-4024</div>
         </div>
@@ -366,19 +486,19 @@
 
     <section class="services">
         <div class="container">
-            <h2>Professional Concrete & Masonry Services</h2>
+            <h2>Professional Concrete and Masonry Services</h2>
             <p class="subtitle">Expert Solutions for Camden County and Haddon Township Homeowners</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Concrete Driveways & Patios</h3>
+                    <h3>Concrete Driveways and Patios</h3>
                     <p>Quality concrete installation for driveways, patios, walkways, and sidewalks throughout Camden County. Durable materials and expert craftsmanship guaranteed.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Concrete Repair & Restoration</h3>
+                    <h3>Concrete Repair and Restoration</h3>
                     <p>Crack repair, resurfacing, and restoration services to extend the life of your concrete. Serving all of South Jersey with reliable repairs.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Foundations & Slabs</h3>
+                    <h3>Foundations and Slabs</h3>
                     <p>Solid concrete foundations and slabs for new construction and additions. Trusted by Camden County contractors and homeowners.</p>
                 </div>
             </div>
@@ -393,7 +513,7 @@
                     <div class="feature-icon">⭐</div>
                     <h3>30+ Years Experience</h3>
                     <p>Three decades serving Camden County and Haddon Township with quality results</p>
-              </div>
+                </div>
                 <div class="feature">
                     <div class="feature-icon">🏆</div>
                     <h3>No Job Too Small</h3>
@@ -401,7 +521,7 @@
                 </div>
                 <div class="feature">
                     <div class="feature-icon">💯</div>
-                    <h3>Local & Trusted</h3>
+                    <h3>Local and Trusted</h3>
                     <p>Your reliable South Jersey contractor - we're your neighbors!</p>
                 </div>
                 <div class="feature">
@@ -409,13 +529,13 @@
                     <h3>FREE Estimates</h3>
                     <p>Transparent pricing with no obligation quotes for all services</p>
                 </div>
-          </div>
-      </div>
+            </div>
+        </div>
     </section>
 
     <section class="service-areas">
         <div class="container">
-            <h2>Proudly Serving Camden County & Haddon Township</h2>
+            <h2>Proudly Serving Camden County and Haddon Township</h2>
             <p>Rich Haigh Concrete is your local concrete and masonry expert serving all of Camden County, New Jersey and surrounding communities. We're proud to provide quality concrete services to homeowners and businesses throughout South Jersey.</p>
             <div class="areas-list">
                 <div class="area-item">Haddon Township</div>
@@ -429,7 +549,7 @@
                 <div class="area-item">Pennsauken</div>
                 <div class="area-item">Lindenwold</div>
                 <div class="area-item">Oaklyn</div>
-                <div class="area-item">& All Camden County</div>
+                <div class="area-item">All Camden County</div>
             </div>
         </div>
     </section>
@@ -439,14 +559,14 @@
             <h2>Ready to Start Your Concrete Project?</h2>
             <p>Call today for your FREE estimate! Serving Haddon Township and all of Camden County, NJ</p>
             <div class="contact-phone">609-820-4024</div>
-            <a href="tel:609-820-4024" class="cta-button" style="background: #000000; color: #d4af37; margin-top: 20px;">Call Now for FREE Estimate</a>
-      </div>
+            <a href="tel:609-820-4024" class="cta-button" style="background: #000000; color: #ffd700; margin-top: 20px;">Call Now for FREE Estimate</a>
+        </div>
     </section>
 
     <footer>
-        <p><strong>Rich Haigh Concrete - Camden County & Haddon Township's Trusted Concrete Contractor</strong></p>
-        <p>Concrete & Masonry Services | Over 30 Years Experience | FREE Estimates</p>
-        <p>Serving Camden County, Haddon Township, Cherry Hill, Collingswood & All South Jersey</p>
+        <p><strong>Rich Haigh Concrete - Camden County and Haddon Township's Trusted Concrete Contractor</strong></p>
+        <p>Concrete and Masonry Services | Over 30 Years Experience | FREE Estimates</p>
+        <p>Serving Camden County, Haddon Township, Cherry Hill, Collingswood and All South Jersey</p>
         <p>Phone: 609-820-4024</p>
         <p>&copy; 2026 Rich Haigh Concrete. All rights reserved.</p>
     </footer>
